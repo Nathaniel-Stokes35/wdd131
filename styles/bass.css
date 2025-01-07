@@ -1,7 +1,7 @@
 :root {
     background-color: #90AFC5;
     --emphasis-color: #336B87;
-    --main-color: #90AFC5;
+    --main-color: #C0DFF5;
     --accent-color: #2A3132;
     --accent-color2: #763626;
     color: var(--accent-color2);
@@ -35,11 +35,11 @@ header {
     background-color: var(--accent-color);
     height: 3vh;
 }
-#head-nav a {
+a {
     color: var(--main-color)
 }
 a:hover{
-    color:var(--emphasis-color);
+    color:white;
     cursor: pointer;
 }
 main {
@@ -96,6 +96,23 @@ main {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    background-color: var(--accent-color2);
+    list-style: none;
+    padding-left: 0;
+}
+#dev-tools-box ul li {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+#dev-tools-box ul li::before {
+    content: '\2022';
+    position: absolute;
+    left:0;
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1vw;
 }
 footer {
     display: flex;
