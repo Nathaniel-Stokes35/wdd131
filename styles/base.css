@@ -168,4 +168,8 @@ footer p{
 .personal-emphasis {
     color: var(--accent-color);
 }
-/*Push*/
+@media screen and (max-width: 768px){
+    #dev-tools-box ul li::before {
+        content: none;
+    }
+}
