@@ -13,12 +13,21 @@ html, body, main, footer {
     margin: 0;
     padding: 0;
     width: 100vw;
+    
 }
 footer p, footer h1, main p, main h1 {
     margin: 0; 
     padding: 0;
 }
+body {
+    display: grid;
+    grid-template-rows: 2fr 1fr 2fr;
+    align-items: center;
+    place-items: center;
+    height: 100vh;
+}
 header {
+    width: 100vw;
     text-align: center;
 }
 .nav-container {
@@ -49,6 +58,7 @@ main {
     align-items: center;
     text-align: center;
     padding: 1vw;
+    max-width: 1500px;
 }
 .heading {
     background-color: var(--accent-color);
@@ -75,7 +85,7 @@ main {
     border: 3px solid var(--accent-color);
     background-color: white;
 }
-.card h1{
+.card h2{
     color: white;
 }
 .card p{
