@@ -98,6 +98,10 @@ main {
     font-size: 1.5rem;
     text-decoration: none;
 }
+.text-holder p {
+    padding-left: 2%;
+    padding-top: 1%;
+}
 #self-photo {
     float:right;
 }
@@ -161,9 +165,11 @@ footer {
     height: 5vh;
     justify-content: center;
     align-items: center;
+    height: 6.5rem;
 }
 footer p{
     font-family: var(--font-three);
+    padding-top: 0.5rem;
 }
 .personal-emphasis {
     color: var(--accent-color);
