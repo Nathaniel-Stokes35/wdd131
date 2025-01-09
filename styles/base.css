@@ -54,6 +54,7 @@ h1, h2{
     justify-content: space-around;
     flex-flow: row wrap;
     align-content: center;
+    padding: 20px;
 }
 .nav-container a {
     font-family: var(--font-two);
