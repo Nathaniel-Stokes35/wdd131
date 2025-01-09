@@ -11,6 +11,16 @@
     background-color: #182535;
     display: flex;
 }
+@font-face {
+    font-family: 'DM Serif Text';
+    src: url('https://fonts.gstatic.com/s/dmseriftext/v12/jizk1wF78v5U7_j_9oYFQfzgA1F3DHLsROh9hGoqmhg.woff2') format('woff2');
+    font-display: optional;
+}
+@font-face {
+    font-family: 'Roboto Condensed';
+    src: url('https://fonts.gstatic.com/s/robotocondensed/v14/5d+1Mzs0vw0gks1tCqEGLzDiBfWg9v8U2Pp6JKh_MzF6a_8YcC4.ttf') format('truetype');
+    font-display: optional;
+}
 * {
     box-sizing: border-box;
 }
@@ -45,8 +55,9 @@ header {
     width: 100vw;
     text-align: center;
 }
-h1 {
+h1, h2{
     font-family: var(--font-one);
+    font-weight: 400;
 }
 .nav-container {
     display: flex;
@@ -56,6 +67,7 @@ h1 {
 }
 .nav-container a {
     font-family: var(--font-two);
+    font-weight: 700;
     display: flex;
     text-decoration: none;
 }
@@ -80,7 +92,6 @@ main {
     max-width: 1600px;
 }
 .heading {
-    font-family: var(--font-one);
     background-color: var(--accent-color);
     font-size: 1.3rem;
 }
@@ -94,7 +105,6 @@ main {
     height: 400px;
 }
 .text-holder p, a{
-    font-family: var(--font-two);
     font-size: 1.5rem;
     text-decoration: none;
 }
@@ -169,6 +179,7 @@ footer {
 }
 footer p{
     font-family: var(--font-three);
+    font-weight: 500;
     padding-top: 8px;
 }
 .personal-emphasis {
