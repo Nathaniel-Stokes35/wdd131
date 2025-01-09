@@ -185,8 +185,16 @@ footer p{
 .personal-emphasis {
     color: var(--accent-color);
 }
+@media screen and (max-width: 1024px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 @media screen and (max-width: 768px){
     #dev-tools-box ul li::before {
         content: none;
+    }
+    main {
+        grid-template-columns: 1fr 1fr;
     }
 }
