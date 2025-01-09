@@ -11,16 +11,6 @@
     background-color: #182535;
     display: flex;
 }
-@font-face {
-    font-family: 'DM Serif Text';
-    src: url('https://fonts.gstatic.com/s/dmseriftext/v12/jizk1wF78v5U7_j_9oYFQfzgA1F3DHLsROh9hGoqmhg.woff2') format('woff2');
-    font-display: optional;
-}
-@font-face {
-    font-family: 'Roboto Condensed';
-    src: url('https://fonts.gstatic.com/s/robotocondensed/v14/5d+1Mzs0vw0gks1tCqEGLzDiBfWg9v8U2Pp6JKh_MzF6a_8YcC4.ttf') format('truetype');
-    font-display: optional;
-}
 * {
     box-sizing: border-box;
 }
