@@ -118,7 +118,7 @@ main {
 }
 .img-box {
     position: relative;
-    max-width: 315px;
+    max-width: 300px;
     padding-right: 20px;
 }
 .img-box img{
