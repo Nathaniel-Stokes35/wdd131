@@ -104,10 +104,12 @@ main {
     flex: 1 auto;
 }
 .img-box {
+    aspect-ratio: 9 / 16;
     max-width: 300px;
     padding-right: 20px;
 }
 .img-box img{
+    aspect-ratio: 9 / 16;
     width: 100%;
     height: auto;
 }
