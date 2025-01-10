@@ -77,18 +77,20 @@ main {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     align-items: center;
     text-align: center;
-    padding: 1vw;
+    padding: 15px;
+    margin: 20px;
     max-width: 1600px;
+    border-radius: 25px;
 }
 .heading {
     background-color: var(--accent-color);
-    font-size: 1.3rem;
+    font-size: 22px;
 }
 .text-holder {
     text-align: left;
 }
 .text-holder p, a{
-    font-size: 1.5rem;
+    font-size: 22px;
     text-decoration: none;
 }
 .text-holder p {
@@ -104,9 +106,13 @@ main {
     background-color: white;
     flex: 1 auto;
 }
+.img-box {
+    padding: 25px;
+}
 .img-box img{
     width: 100%;
     height: auto;
+    border-radius: 50px;
 }
 .card h2{
     color: white;
@@ -141,8 +147,8 @@ main {
     position: absolute;
     left:0;
     color: white;
-    font-size: 1.5rem;
-    margin-right: 1vw;
+    font-size: 15px;
+    margin-right: 20px;
 }
 footer {
     display: flex;
@@ -151,7 +157,6 @@ footer {
     font-size: 1.3rem;
     color: white;
     background-color: var(--accent-color2);
-    height: 5vh;
     justify-content: center;
     align-items: center;
     height: 90px;
