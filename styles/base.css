@@ -89,6 +89,11 @@ main {
     background-color: var(--accent-color);
     font-size: 22px;
 }
+picture {
+    max-width: 300px;
+    margin-right: 55px;
+    padding-right: 25px;
+}
 .text-holder {
     text-align: left;
 }
@@ -111,7 +116,7 @@ main {
 .img-box {
     padding: 25px;
 }
-.img-box img{
+.img-box source, img{
     width: 100%;
     height: auto;
     border-radius: 50px;
