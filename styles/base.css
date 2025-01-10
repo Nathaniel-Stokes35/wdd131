@@ -1,5 +1,5 @@
 :root {
-    background-color: #90AFC5;
+    --background-color: #90AFC5;
     --emphasis-color: #336B87;
     --main-color: #C0DFF5;
     --accent-color: #2A3132;
@@ -9,7 +9,6 @@
     --font-three: "Roboto Condensed", serif;
     color: var(--accent-color2);
     background-color: #182535;
-    display: flex;
 }
 * {
     box-sizing: border-box;
@@ -59,7 +58,6 @@ h1, h2{
 .nav-container a {
     font-family: var(--font-two);
     font-weight: 700;
-    display: flex;
     text-decoration: none;
 }
 #head-nav {
@@ -89,23 +87,12 @@ main {
 .text-holder {
     text-align: left;
 }
-.text-holder img{
-    margin-left: 20px;
-    margin-top: 10px;
-    padding: 1vw;
-}
 .text-holder p, a{
     font-size: 1.5rem;
     text-decoration: none;
 }
 .text-holder p {
     padding: 15px;
-}
-#self-photo {
-    float:right;
-}
-#temple-photo {
-    float: left;
 }
 .card {
     overflow: hidden;
@@ -117,11 +104,8 @@ main {
     flex: 1 auto;
 }
 .img-box {
-    display: flex;
-    position: relative;
     max-width: 300px;
     padding-right: 20px;
-    flex: 1 auto;
 }
 .img-box img{
     width: 100%;
@@ -134,8 +118,6 @@ main {
     color: var(--accent-color)
 }
 #about-me {
-    display: flex;
-    flex-direction: column;
     grid-column: 1 / 5;
     position: relative;
 }
@@ -153,7 +135,6 @@ main {
     padding-left: 0;
 }
 #dev-tools-box ul li {
-    display: flex;
     align-items: center;
     position: relative;
     justify-content: center;
