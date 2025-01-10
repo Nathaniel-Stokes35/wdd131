@@ -64,7 +64,7 @@ h1, h2{
 }
 #head-nav {
     background-color: var(--accent-color);
-    height: 3vh;
+    height: 50px;
 }
 a {
     color: var(--main-color)
