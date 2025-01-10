@@ -14,10 +14,8 @@
     box-sizing: border-box;
 }
 html, body {
-    height: 100vh;
     margin: 0;
     padding: 0;
-    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +23,7 @@ html, body {
 main, footer {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    width: 100%;
 }
 footer p, footer h1, main p, main h1 {
     margin: 0; 
@@ -37,11 +35,11 @@ body {
     grid-template-rows: 2fr 1fr 2fr;
     align-items: center;
     place-items: center;
-    height: 100vh;
+    height: 100%;
     max-height: 1200px;
 }
 header {
-    width: 100vw;
+    width: 100%;
     text-align: center;
 }
 h1, h2{
@@ -74,9 +72,10 @@ a:hover{
 main {
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
     align-items: center;
     text-align: center;
+    justify-content: space-around;
     padding: 15px;
     margin: 20px;
     max-width: 1600px;
