@@ -190,8 +190,8 @@ footer p{
     }
 }
 @media screen and (max-width: 768px){
-    .nav-container {
-        flex: 1;
+    #head-nav {
+        height: 150px;
     }
     #dev-tools-box ul li::before {
         content: none;
