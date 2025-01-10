@@ -190,9 +190,8 @@ footer p{
     }
 }
 @media screen and (max-width: 768px){
-    header {
-        padding: 20px;
-        height: auto;
+    #head-nav {
+        height: 150px;
     }
     #dev-tools-box ul li::before {
         content: none;
