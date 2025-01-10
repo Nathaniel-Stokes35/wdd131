@@ -44,7 +44,11 @@ header {
 }
 h1, h2{
     font-family: var(--font-one);
+    font-size: 30px;
     font-weight: 400;
+}
+p, a {
+    font-size: 24px;
 }
 .nav-container {
     display: flex;
@@ -89,7 +93,6 @@ main {
     text-align: left;
 }
 .text-holder p, a{
-    font-size: 22px;
     text-decoration: none;
 }
 .text-holder p {
