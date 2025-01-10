@@ -28,7 +28,16 @@
             <section class="card" id="about-me">
                 <div class="heading"><h2>About Me</h2></div>
                 <div class="text-holder">
-                    <img id="self-photo" src="./images/outside-adventures-min.avif" alt="Woodland Adventures"><p>&nbsp;&nbsp;&nbsp;&nbsp;My name is Nathaniel Stokes, you can call me Nathan if you prefer. I was born and raised in southwest Missouri, basically the center of the United States. Although I haven't done a lot of travelling, while I was in junior high and the first years of high school I found friends all over the world through this chatting website called "Chatango", which was mainly used for "RP" sites.</p>
+                    <img id="self-photo" 
+                    srcset="
+                    ./images/outside-adventures-360w.avif 360w,
+                    ./images/outside-adventures-480w.avif 480w,
+                    ./images/outside-adventures-600w.avif 600w"
+                    sizes="(max-width: 480px) 100vw,
+                         (max-width: 600px) 50vw,
+                         (min-width: 601px) 33vw" 
+                    alt="Woodland Adventures">
+                    <p>&nbsp;&nbsp;&nbsp;&nbsp;My name is Nathaniel Stokes, you can call me Nathan if you prefer. I was born and raised in southwest Missouri, basically the center of the United States. Although I haven't done a lot of travelling, while I was in junior high and the first years of high school I found friends all over the world through this chatting website called "Chatango", which was mainly used for "RP" sites.</p>
                     <img id="temple-photo" 
                         srcset="./images/me-and-daisy-at-the-temple-271w.avif 271w, 
                                 ./images/me-and-daisy-at-the-temple-515w.avif 515w, 
