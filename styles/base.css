@@ -116,6 +116,7 @@ main {
     border: 3px solid var(--accent-color);
     background-color: white;
 }
+
 .card h2{
     color: white;
 }
