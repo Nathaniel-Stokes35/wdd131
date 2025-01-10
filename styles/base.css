@@ -189,9 +189,20 @@ footer p{
         content: none;
     }
     main {
-        display: block;
+        grid-template-columns: 1fr;
+    }
+    .text-holder {
+        flex-direction: column;
     }
     #dev-tools-box {
-        display: block;
+        flex-wrap: wrap;
+    }
+    .card aside{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    picture {
+        max-width: 100%;
     }
 }
