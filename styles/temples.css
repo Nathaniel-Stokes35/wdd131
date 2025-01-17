@@ -96,7 +96,7 @@ nav {
 main {
     place-items: center;
     color: var(--font-color1);
-    margin: 0, auto;
+    margin: 0 auto;
 }
 img, figure {
     max-width: 300px;
