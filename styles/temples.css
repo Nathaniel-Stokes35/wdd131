@@ -115,6 +115,13 @@ footer {
         grid-template-columns: 1fr 1fr;
         margin: 10px;
     }
+    #third {
+        grid-column: 1/-1;;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
     img, figure {
         width: 40vw;
         height: auto;

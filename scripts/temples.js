@@ -1,11 +1,9 @@
 function navigation_respond() {
-    console.log('Yes, we made it into the function.');
     const ham = document.getElementById("hamburger");
     const navLinks = document.getElementById("nav-links");
     const titles = document.getElementById("titles");
 
     ham.classList.toggle("active");
-    console.log(hamburger.classList);
     if (navLinks.style.display === "none" || navLinks.style.display === "") {
         navLinks.style.display = "grid"
         titles.style.display = "none";
