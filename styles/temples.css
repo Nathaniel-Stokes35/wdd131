@@ -99,7 +99,7 @@ main {
     margin: 0 auto;
 }
 img, figure {
-    max-width: 300px;
+    max-width: 525px;
     width: 85vw;
     height: auto;
     text-align: center;
