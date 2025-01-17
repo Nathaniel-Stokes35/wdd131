@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Roboto+Condensed:wght@500&family=Montserrat:wght@700&display=swap" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="./styles/temples.css" as="style">
+        <link rel="icon" href="./images/temple-images/temple-icon.ico" type="image/x-icon">
+        <title>WDD 131 - Temples Picture Album - Nathaniel Stokes</title>
+        <script src="./scripts/temples.js" defer></script>
+        <meta name="author" content="Nathaniel Stokes">
+        <meta name="description" content="WDD 131 - Temples Album - Nathaniel Cole Stokes - About Me Page">
+        <link rel="stylesheet" href="./styles/temples.css">
+        <link rel="stylesheet" href="./styles/temples-large.css" media="screen and (min-width: 1200px)">
+    </head>
+    <body>
+        <header>
+            <section id="titles">
+                <h1>Temples Picture Album</h1>
+                <h4>Selected by: Nathaniel Stokes</h4>    
+            </section>
+            <nav id="nav-links">
+                <a href="" target="_blank">Home</a>
+                <a href="" target="_blank">Old</a>
+                <a href="" target="_blank">New</a>
+                <a href="" target="_blank">Large</a>
+                <a href="" target="_blank">Small</a>
+            </nav>
+            <button id="hamburger" aria-label="Toggle Navigation" onclick="navigation_respond()">
+                <p id="close-nav">X</p>
+                <div id="lines">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </button>
+        </header>
+        <main>
+            <h2>Temple Album</h2>
+            <div class="album-box">
+                <section id="first">
+                    <figure>
+                        <img 
+                            src="./images/temple-images/images-min/kansas-city-lds-temple.webp"
+                            width="300"
+                            height="250" 
+                            alt="kansas-city-temple"
+                            loading="lazy">
+                        <caption>Kansas City - Missouri Temple</caption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/temple-images/images-min/layton-utah-temple.webp"
+                            width="300"
+                            height="250" 
+                            alt="layton-temple"
+                            loading="lazy">
+                        <caption>Layton - Utah Temple</caption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="images/temple-images/images-min/laie-hawaii-temple.webp"
+                            width="300"
+                            height="250"
+                            alt="laie-temple"
+                            loading="lazy">
+                        <caption>Laie - Hawaii Temple</caption>
+                    </figure>
+                </section>
+                <section id="second">
+                    <figure>
+                        <img
+                            src="./images/temple-images/images-min/oakland-california-temple.webp"
+                            width="300"
+                            height="250"
+                            alt="oakland-temple"
+                            loading="lazy">
+                        <caption>Oakland - California Temple</caption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/temple-images/images-min/provo-city-utah-temple.webp"
+                            width="300"
+                            height="250"
+                            alt="provo-city-center-temple"
+                            loading="lazy">
+                        <caption>Provo City Center - Utah Temple</caption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="images/temple-images/images-min/san-antonio-texas-temple-55647-main.webp"
+                            width="300"
+                            height="250"
+                            alt="san-antonio-temple"
+                            loading="lazy">
+                        <caption>San Antonio - Texas Temple</caption>
+                    </figure>
+                </section>
+                <section id="third">
+                    <figure>
+                        <img
+                            src="./images/temple-images/images-min/provo-utah-temple.webp"
+                            width="300"
+                            height="250"
+                            alt="provo-temple"
+                            loading="lazy">
+                        <caption>Provo - Utah Temple</caption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/temple-images/images-min/saratoga-springs-utah-temple.webp"
+                            width="300"
+                            height="250"
+                            alt="saratoga-temple"
+                            loading="lazy">
+                        <caption>Saratoga Springs - Utah Temple</caption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="images/temple-images/images-min/st-george-utah-temple.webp"
+                            width="300"
+                            height="250"
+                            alt="st.george-temple"
+                            loading="lazy">
+                        <caption>St. George - Utah Temple</caption>
+                    </figure>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;|<span id=currentYear></span>|Nathaniel Stokes|Missouri, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

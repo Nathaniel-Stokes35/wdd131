@@ -1,0 +1,104 @@
+:root {
+    --background-color: #90AFC5;
+    --emphasis-color: #336B87;
+    --main-color: #C0DFF5;
+    --font-color1: #D9FFFF;
+    --accent-color: #2A3132;
+    --accent-color2: #763626;
+    --font-one: "DM Serif Text", serif;
+    --font-two: "Montserrat", serif;
+    --font-three: "Roboto Condensed", serif;
+    color: var(--accent-color2);
+    background-color: #182535;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: left;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    background-color: var(--empasis-color);
+}
+h1, h2, h3, h4{
+    color: var(--font-color1);
+}
+p, span {
+    color: var(--font-color2);
+}
+header {
+    display: grid;
+    width:100vw;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--accent-color2);
+}
+nav {
+    display: flex;
+}
+#nav-links a {
+    font-size: 2rem;
+    color: var(--font-color1);
+    font-family: var(--font-two);
+}
+#nav-links a:hover {
+    color:var(--background-color);
+}
+#titles {
+    justify-self: left;
+    margin-left: 20px;
+}
+#hamburger {
+    width: 40px;
+    height: 40px;
+    justify-self: right;
+    margin-right: 50px;
+}
+#lines {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+}
+#close-nav {
+    display: none;
+}
+#nav-links {
+    display: none;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 80vw;
+}
+main {
+    place-items: center;
+    color: var(--font-color1);
+}
+img, figure {
+    max-width: 300px;
+    width: 85vw;
+    height: auto;
+    text-align: center;
+}
+footer {
+    background-color: var(--accent-color2);
+    color: var(--font-color1);
+    text-align: center;
+}
+@media screen and (min-width: 768px) {
+    .album-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    img, figure {
+        width: 40vw;
+        height: auto;
+    }
+}
