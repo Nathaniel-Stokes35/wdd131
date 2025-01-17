@@ -23,11 +23,8 @@ body {
     color: var(--accent-color);
     background-color: var(--empasis-color);
 }
-h1, h2, h3, h4{
+h1, p, span{
     color: var(--font-color1);
-}
-p, span {
-    color: var(--font-color2);
 }
 header {
     display: grid;
@@ -79,6 +76,7 @@ nav {
 main {
     place-items: center;
     color: var(--font-color1);
+    margin: 0, auto;
 }
 img, figure {
     max-width: 300px;
