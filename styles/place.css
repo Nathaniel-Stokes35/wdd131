@@ -8,6 +8,7 @@ nav button {
 main {
     display: block;
     max-width: 1600px;
+    font-size: 140%;
 }
 main ul{
     list-style-type: none;
