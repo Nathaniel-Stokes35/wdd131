@@ -1,0 +1,63 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Roboto+Condensed:wght@500&family=Montserrat:wght@700&display=swap" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="./styles/place.css" as="style">
+        <link rel="icon" href="./images/icons/USA_icon.ico" type="image/x-icon">
+        <title>WDD 131 - Dynamic Web Fundamentals - United States</title>
+        <link rel="stylesheet" href="./styles/place.css">
+        <link rel="stylesheet" href="./styles/place-large.css" media="screen and (min-width: 1200px)">
+        <script src="./scripts/getdates.js" defer></script>
+        <script src="./scripts/place.js" defer></script>
+        <meta name="author" content="Nathaniel Stokes">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundeamentals - Nathaniel Cole Stokes - United States Page">
+    </head>
+    <body>
+        <header>
+            <h1>United States of America</h1>
+            <nav>
+                <button data-time-zone="PST">Pacific</button>
+                <button data-time-zone="MST">Mountain</button>
+                <button data-time-zone="CST">Central</button>
+                <button data-time-zone="EST">Eastern</button>
+            </nav>
+        </header>
+        <main>
+            <picture id="main-image">
+                <source srcset="./images/places-images/appalacian-mountains.webp" media="(min-width: 1200px)">
+                <source srcset="./images/places-images/rocky-mountains.webp" media="(min-width: 768px)">
+                <img src="./images/places-images/white-mountains.webp" style="width: 100%; height: auto;" alt="United States Landscape" >
+            </picture>
+            <section id="data-box">
+                <h2>Data</h2>
+                <ul>
+                    <li><strong>Area: </strong>3,809,525 sq mi</li>
+                    <li><strong>Population: </strong>334.9 million</li>
+                    <li><strong>Capital: </strong>Washington D.C.</li>
+                    <li><strong>Common Languages: </strong>English, Spanish</li>
+                    <li><strong>Currency: </strong>Dollar</li>
+                    <li><strong>Time Zones: </strong>PST, MST, CST, EST</li>
+                    <li><strong>Calling Code: </strong>+1</li>
+                    <li><strong>Internet TLD: </strong>.us</li>
+                </ul>
+            </section>
+            <section id="weather-box">
+                <h2>Weather <span id="weather-icon"></span></h2>
+                <h3>City: <span id="city">--</span></h3>
+                <p>Temperature: <span id="temperature">--</span></p>
+                <p>Wind Speed: <span id="wind-speed">--</span></p>
+                <p>Wind Chill: <span id="wind-chill">--</span></p>
+                <p>Condition: <span id="condition">--</span></p>
+            </section>
+            <p>**Windchill cannot be calculated when temperatures exceed 50°F or wind speeds are lower than 3mph</p>
+        </main>
+        <footer>
+            <p>&copy;|<span id=currentYear></span>|Nathaniel Stokes|Missouri, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

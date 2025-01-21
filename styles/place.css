@@ -1,0 +1,23 @@
+@import url('base.css');
+
+nav button {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+}
+main {
+    display: block;
+    max-width: 1600px;
+}
+main ul{
+    list-style-type: none;
+}
+#main-image{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    max-width: 1600px;
+}
+main section{
+    position: relative;
+}
