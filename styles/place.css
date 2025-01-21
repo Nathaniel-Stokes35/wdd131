@@ -17,6 +17,9 @@ main ul{
     display: flex;
     margin: 0;
     padding: 0;
+    max-width: 1600px;
+}
+#main-image img {
     max-width: 1200px;
 }
 main section{
