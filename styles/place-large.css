@@ -9,6 +9,9 @@ main section{
     border-radius: 5px;
     width: 30%;
 }
+#main-image img{
+    max-width: 1600px;
+}
 #weather-box {
     top: 10%;
     left: 5%;
