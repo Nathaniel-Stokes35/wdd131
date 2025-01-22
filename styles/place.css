@@ -3,6 +3,10 @@ nav button {
     margin: 5px;
     cursor: pointer;
 }
+body {
+    max-width: 1600px;
+    height: auto;
+}
 main {
     display: block;
     max-width: 1600px;
