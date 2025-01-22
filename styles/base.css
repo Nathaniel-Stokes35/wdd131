@@ -179,7 +179,11 @@ footer p{
 @media screen and (max-width: 1024px) {
     main {
         grid-template-columns: 1fr 1fr 1fr;
+        max-width: 1024px;
     }
+    body {
+        max-width: 1024px;
+    }   
 }
 @media screen and (max-width: 768px){
     #head-nav {
@@ -190,7 +194,11 @@ footer p{
     }
     main {
         grid-template-columns: 1fr;
+        max-width: 768px;
     }
+    body {
+        max-width: 768px;
+    }  
     .text-holder {
         flex-direction: column;
     }

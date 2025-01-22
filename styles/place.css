@@ -49,3 +49,13 @@ main section{
 #condition.cloudy::after {
     content: url('../images/icons/overcast.svg');
 }
+@media screen and (max-width: 1024px) {
+    #main-image img{
+        max-width: 1024px;
+    }
+}
+@media screen and (max-width: 768px){
+    #main-image img{
+        max-width: 768px;
+    }
+}
