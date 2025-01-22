@@ -1,5 +1,3 @@
-@import url('base.css');
-
 nav button {
     padding: 10px 20px;
     margin: 5px;
@@ -21,7 +19,29 @@ main ul{
 }
 #main-image img {
     max-width: 1200px;
+    width: 100%;
+    height: auto;
 }
 main section{
     position: relative;
+    place-items: center;
+}
+#condition {
+    align-content: center;
+    width: 50%;
+}
+#condition.mostly::after {
+    content: url('../images/icons/partly-cloudy.svg');
+}
+#condition.sunny::after {
+    content: url('../images/icons/sunny.svg');
+}
+#condition.rainy::after {
+    content: url('../images/icons/rainy.svg');
+}
+#condition.snowy::after {
+    content: url('../images/icons/snowy.svg');
+}
+#condition.cloudy::after {
+    content: url('../images/icons/overcast.svg');
 }

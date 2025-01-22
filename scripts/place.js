@@ -36,18 +36,21 @@ async function fetchWeather(timeZone) {
 }
 
 function updateWeatherIcon(condition) {
-    const weatherIcon = document.querySelector('#weather-icon');
-    
+    const conditionElement = document.querySelector('#condition');
+    conditionElement.textContent = condition;
+    console.log(condition);
+    conditionElement.classList.remove('sunny', 'rainy', 'snowy', 'cloudy', 'mostly');
+
     if (condition === 'Sunny') {
-        weatherIcon.textContent = '🌞';
+        conditionElement.classList.add('sunny');
     } else if (condition === 'Rainy') {
-        weatherIcon.textContent = '🌧️';
+        conditionElement.classList.add('rainy');
     } else if (condition === 'Snowy') {
-        weatherIcon.textContent = '❄️';
+        conditionElement.classList.add('snowy');
     } else if (condition === 'Cloudy') {
-        weatherIcon.textContent = '☁️';
+        conditionElement.classList.add('cloudy');
     } else {
-        weatherIcon.textContent = '🌤️';
+        conditionElement.classList.add('mostly');
     }
 }
 
