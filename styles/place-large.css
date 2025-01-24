@@ -9,6 +9,21 @@ main section{
     border-radius: 5px;
     width: 30%;
 }
+#condition.mostly::after {
+    content: " ⛅";
+}
+#condition.sunny::after {
+    content: " ☀️";
+}
+#condition.rainy::after {
+    content: " 🌧️";
+}
+#condition.snowy::after {
+    content: " ❄️"; 
+}
+#condition.cloudy::after {
+    content: " ☁️"; 
+}
 #main-image img{
     max-width: 1600px;
 }

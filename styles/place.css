@@ -32,7 +32,6 @@ main section{
 }
 #condition {
     align-content: center;
-    width: 50%;
 }
 #default-emoticon {
     display: none;
