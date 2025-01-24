@@ -34,6 +34,9 @@ main section{
     align-content: center;
     width: 50%;
 }
+#default-emoticon {
+    display: none;
+}
 #condition.mostly::after {
     content: url('../images/icons/partly-cloudy.svg');
 }
