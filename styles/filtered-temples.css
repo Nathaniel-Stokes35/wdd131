@@ -1,0 +1,129 @@
+:root {
+    --background-color: #90AFC5;
+    --emphasis-color: #336B87;
+    --main-color: #C0DFF5;
+    --font-color1: #D9FFFF;
+    --accent-color: #2A3132;
+    --accent-color2: #763626;
+    --font-one: "DM Serif Text", serif;
+    --font-two: "Montserrat", serif;
+    --font-three: "Roboto Condensed", serif;
+    color: var(--accent-color2);
+    background-color: #182535;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: left;
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    background-color: var(--empasis-color);
+}
+h1, p, span{
+    color: var(--font-color1);
+}
+header {
+    display: grid;
+    width:100vw;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--accent-color2);
+}
+nav {
+    display: flex;
+}
+#nav-links a {
+    font-size: 2rem;
+    color: var(--font-color1);
+    font-family: var(--font-two);
+}
+#nav-links a:hover {
+    color:var(--background-color);
+}
+#titles {
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    margin-left: 20px;
+}
+#hamburger {
+    background: none;
+    border: none;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    justify-self: right;
+    margin: 50px 80px;
+}
+.line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--font-color1);
+    transition: all 0.15s ease;
+    transform: none;
+    opacity: 1;
+}
+
+#hamburger.active .line:nth-child(1) {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    position: relative;
+}
+#hamburger.active .line:nth-child(2) {
+    opacity: 0;
+}
+#hamburger.active .line:nth-child(3) {
+    transform: rotate(-45deg);
+    transform-origin: bottom left;
+    position: relative;
+}
+
+#close-nav {
+    display: none;
+}
+#nav-links {
+    display: none;
+    grid-template-columns: 1fr;
+    place-items: center;
+    width: 80vw;
+}
+main {
+    place-items: center;
+    color: var(--font-color1);
+    margin: 0 auto;
+}
+img, figure {
+    max-width: 525px;
+    width: 85vw;
+    height: auto;
+    text-align: center;
+}
+footer {
+    background-color: var(--accent-color2);
+    color: var(--font-color1);
+    text-align: center;
+}
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .album-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 10px;
+    }
+    #third {
+        grid-column: 1/-1;;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    img, figure {
+        width: 40vw;
+        height: auto;
+    }
+}

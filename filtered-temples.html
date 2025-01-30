@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Roboto+Condensed:wght@500&family=Montserrat:wght@700&display=swap" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="./styles/filtered-temples.css" as="style">
+        <link rel="icon" href="./images/temple-images/temple-icon.ico" type="image/x-icon">
+        <title>WDD 131 - Temples Picture Album - Nathaniel Stokes</title>
+        <script src="./scripts/filtered-temples.js" defer></script>
+        <meta name="author" content="Nathaniel Stokes">
+        <meta name="description" content="WDD 131 - Filtered Temples Album - Nathaniel Cole Stokes">
+        <link rel="stylesheet" href="./styles/filtered-temples.css">
+        <link rel="stylesheet" href="./styles/filtered-temples-large.css" media="screen and (min-width: 1200px)">
+    </head>
+    <body>
+        <header>
+            <section id="titles">
+                <h1>Temples Picture Album</h1>
+                <p>Selected by: Nathaniel Stokes</p>    
+            </section>
+            <nav id="nav-links">
+                <a href="#" class="menu-item" data-filter="old">Old</a></li>
+                <a href="#" class="menu-item" data-filter="new">New</a></li>
+                <a href="#" class="menu-item" data-filter="large">Large</a></li>
+                <a href="#" class="menu-item" data-filter="small">Small</a></li>
+                <a href="#" class="menu-item" data-filter="home">Home</a></li>
+            </nav>
+            <button id="hamburger" aria-label="Toggle Navigation" onclick="navigation_respond()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </header>
+        <main>
+            <h2 id="selection">Temple Album</h2>
+            <div class="album-box"></div>
+        </main>
+        <footer>
+            <p>&copy;|<span id=currentYear></span>|Nathaniel Stokes|Missouri, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
