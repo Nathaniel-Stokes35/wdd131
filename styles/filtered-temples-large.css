@@ -37,21 +37,22 @@ main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 40px;
+    padding-bottom: 20px;
 }
 .temple-card{
     background-color: var(--background-color);
 }
 .temple-card {
-    border: 2px solid var(--main-color); /* Border with a light gray color */
-    border-radius: 8px; /* Optional: to give rounded corners */
-    box-shadow: 0 4px 8px var(--main-color); /* Light shadow for depth */
-    padding: 10px; /* Optional: to give some padding inside the card */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* For smooth hover effect */
+    border: 2px solid var(--main-color); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px var(--main-color);
+    padding: 10px; 
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
 .temple-card:hover {
-    box-shadow: 0 8px 16px var(--main-color); /* Darker shadow on hover */
-    transform: translateY(-5px); /* Slight lift effect on hover */
+    box-shadow: 0 8px 18px var(--main-color); 
+    transform: translateY(-5px);
 }
 .temple-card p, figcaption{
     color: black;
