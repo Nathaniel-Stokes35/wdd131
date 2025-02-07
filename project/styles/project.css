@@ -1,0 +1,36 @@
+:root {
+    --text: #EFE;
+    --fun: #FFD700;
+    --button-text: #002766;
+    --accent: #444;
+    --background: #222;
+}
+body {
+    background-color: var(--background);
+    color: var(--text);
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    justify-content: center;
+}
+h1, h2 {
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+main section{
+    background-color: var(--accent);
+    border:1px solid #EFE;
+    border-radius: 50px;
+    box-shadow: #EFE;
+    justify-items: center;
+    padding: 5px;
+}
+button, .fun-elements {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+button {
+    background-color: var(--fun);
+    color: var(--button-text);
+}
+footer {
+    font-size: 0.8em;
+    color: var(--text);
+}
