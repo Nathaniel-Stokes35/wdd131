@@ -19,9 +19,10 @@ main section{
     background-color: var(--accent);
     border:1px solid #EFE;
     border-radius: 50px;
-    box-shadow: #EFE;
+    box-shadow: 5px 5px 8px var(--text);
     justify-items: center;
     padding: 5px;
+    margin: 20px;
 }
 button, .fun-elements {
     font-family: 'Comic Sans MS', cursive, sans-serif;
