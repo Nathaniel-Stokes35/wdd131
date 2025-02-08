@@ -38,7 +38,7 @@ products.forEach(product => {
     selectBox.appendChild(option);
 });
 
-window.addEventListened("load", () => {
+window.addEventListener("load", () => {
     let reviewCount = localStorage.getItem("reviewCount") || 0;
     reviewCount++;
     localStorage.setItem("reviewCount", reviewCount);
