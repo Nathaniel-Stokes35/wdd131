@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Roboto+Condensed:wght@500&family=Montserrat:wght@700&display=swap" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="./styles/base.css" as="style">
+        <link rel="icon" href="./images/favicon.ico" type="image/x-icon">
+        <title>WDD 131 - Dynamic Web Fundamentals - Product Review Form</title>
+        <link rel="stylesheet" href="./styles/base.css">
+        <link rel="stylesheet" href="./styles/form.css">
+        <script src="./scripts/form.js" defer></script>
+        <meta name="author" content="Nathaniel Stokes">
+        <meta name="description" content="WDD 131 - Dynamic Web Fundeamentals - Nathaniel Cole Stokes - Product Review Form">
+    </head>
+    <body>
+        <header>
+            <h1>Product Review</h1>
+        </header>
+        <main>
+            <form>
+                <div>
+                    <label>
+                        <p>Product Name</p>
+                        <select id="products" name="products">
+                                <option value=disabled>Choose a Product...</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="ratings">
+                    <p>Overall Rating</p>
+                    <label>
+                        <strong>*</strong>
+                        <input type="radio" name="rating" value="1">
+                    </label>
+                    <label>
+                        <strong>**</strong>
+                        <input type="radio" name="rating" value="2">
+                    </label>
+                    <label>
+                        <strong>***</strong>
+                        <input type="radio" name="rating" value="3">
+                    </label>
+                    <label>
+                        <strong>****</strong>
+                        <input type="radio" name="rating" value="4">
+                    </label>
+                    <label>
+                        <strong>*****</strong>
+                        <input type="radio" name="rating" value="5">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        <p>Date of Installation: </p>
+                        <input type="date" name="installDate">
+                    </label>
+                </div>
+                <div>
+                    <p>Which features did you find useful in the product?</p>
+                    <p>(Check all that Apply)</p>
+                    <label><input type="checkbox" name="editing" value="yes">Durability</label>
+                    <label><input type="checkbox" name="code" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" name="processor" value="yes">Performance</label>
+                    <label><input type="checkbox" name="client" value="yes">Design</label>
+                </div>
+                <div>
+                    <p>Written Review <span>(Optional)</span></p>
+                    <label><input type="text" name="review"></label>
+                </div>
+                <div>
+                    <p>Your Name <span>(Optional)</span></p>
+                    <label><input type="text" name="review"></label>
+                </div>
+                <div>
+                    <label><input type="submit" name="post-review" value="Post Review"></label>
+                </div>
+            </form>
+        </main>
+    </body>
+    <footer>
+        <p>&copy;|<span id=currentYear></span>|Nathaniel Stokes|Missouri, USA</p>
+        <p id="lastModified"></p>
+    </footer>
+</html>

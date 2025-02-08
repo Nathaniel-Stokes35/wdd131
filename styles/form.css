@@ -1,0 +1,22 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+main {
+    display: flex;
+}
+form {
+    background-color: #EEE;
+    border-radius: 25px;
+    padding: 1vw;
+}
+form span {
+    color: blue;
+    font-style: italic;
+    font-size: 1rem;
+}
+form div {
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #000;
+}
