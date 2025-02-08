@@ -45,5 +45,24 @@ window.addEventListener("load", () => {
     console.log(`Reviews completed: ${reviewCount}`);
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector("form");
+    const checkboxes = document.querySelectorAll('input[name="features"]');
+    
+    form.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const isChecked = Array.from(checkboxes).some(checkbox => checkbox.checked);
+
+        if (!isChecked) {
+            alert("Please select at least one feature before submitting.");
+        } else {
+            let reviewCount = localStorage.getItem("reviewCount") || 0;
+            reviewCount++;
+            localStorage.setItem("reviewCount", reviewCount);
+            window.location.href = "review.html";
+        }
+    });
+});
+
 year_container.innerHTML = today.getFullYear();
 modified_container.innerHTML = `Last Modified: ${modified_date}`;
