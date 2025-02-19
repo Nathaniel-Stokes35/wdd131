@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let reviewCount = localStorage.getItem("reviewCount") || 0;
             reviewCount++;
             localStorage.setItem("reviewCount", reviewCount);
-            window.location.href = "review.html";
+            window.location.href = "signed.html";
         }
     });
 });

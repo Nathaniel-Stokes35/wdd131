@@ -5,6 +5,16 @@
     --accent: #444;
     --background: #222;
 }
+body {
+    font-family: 'Arial', sans-serif;
+}
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+}
+button, .fun-elements {
+    font-family: 'Comic Neue', cursive, sans-serif;
+}
+
 header {
     display: grid;
     width:100vw;
@@ -16,21 +26,26 @@ nav {
     justify-content: center;
     align-items: center;
 }
+p {
+    text-indent: 20px;;
+}
 nav a {
     color: var(--text);
     padding: 10px;
     text-decoration: none;
-    width: 100%;
+    width: 50%;
+}
+nav a:hover {
+    color: var(--fun);
+    border:  var(--text) 1px solid;
+    border-radius: 50px;
+    text-shadow:  5px 5px 8px var(--text);
 }
 body {
     background-color: var(--background);
     color: var(--text);
-    font-family: Arial, Helvetica, sans-serif;
     display: grid;
     justify-content: center;
-}
-h1, h2 {
-    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 main section{
     background-color: var(--accent);
@@ -50,9 +65,6 @@ figure img {
 #engagment label {
     border: #EFE 1px solid;
     padding: 10px;
-}
-button, .fun-elements {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
 }
 button {
     background-color: var(--fun);
