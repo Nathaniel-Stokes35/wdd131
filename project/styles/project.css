@@ -17,7 +17,7 @@ button, .fun-elements {
 
 header {
     display: grid;
-    width:100vw;
+    max-width:90vw;
     grid-template-columns: 1fr 1fr;
     background-color: var(--accent);
 }
@@ -73,4 +73,12 @@ button {
 footer {
     text-align: center;
     color: var(--text);
+}
+input,
+select,
+button {
+    min-height: 44px; 
+    min-width: 44px;
+    padding: 10px;
+    margin: 10px;
 }

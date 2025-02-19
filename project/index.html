@@ -117,70 +117,60 @@
             </section>
             <section id="newsletter">
                 <h2>Newsletter</h2>
-                <p>Sign up for our newsletter to get the latest memes sent to yours, or a friends, inbox!</p>
-                <p>Choose your engagment level, meme formats, and when you want to start receiving memes!</p>
+                <p>Sign up for our newsletter to get the latest memes sent to yours, or a friend's inbox!</p>
+                <p>Choose your engagement level, meme formats, and when you want to start receiving memes!</p>
+            
                 <form method="get" action="newsletter.html">
                     <div>
                         <h2>Sign Up Form</h2>
-                        <label>
-                            <select id="products" name="products" required>
-                                    <option value="" disabled selected>I'm Signing Up...</option>
-                                    <option value="myself">For myself</option>
-                                    <option value="friend">For my friend</option>
-                            </select>
-                        </label>
+                        <label for="products">I'm Signing Up...</label>
+                        <select id="products" name="products" required>
+                            <option value="" disabled selected>Choose an option</option>
+                            <option value="myself">For myself</option>
+                            <option value="friend">For my friend</option>
+                        </select>
                     </div>
-                    <label>
-                        <p>Your Email Address:</p>
-                        <input type="text" name="email" id="email" required>
-                    </label>
-                    <div id="engagment">
-                        <p>Engagment Level: (How often do you want new memes sent to you?)</p>
-                        <label>
-                            <strong>Once a Month</strong>
-                            <input type="radio" name="engage" value="1">
-                        </label>
-                        <label>
-                            <strong>Every two weeks</strong>
-                            <input type="radio" name="engage" value="2">
-                        </label>
-                        <label>
-                            <strong>Once a Week</strong>
-                            <input type="radio" name="engage" value="3" required>
-                        </label>
-                        <label>
-                            <strong>Multiple Days a Week</strong>
-                            <input type="radio" name="engage" value="4">
-                        </label>
-                        <label>
-                            <strong>Every Day</strong>
-                            <input type="radio" name="engage" value="5">
-                        </label>
-                    </div>
+            
                     <div>
-                        <p>Date to Begin: </p>
-                        <label>
-                            <input type="date" name="installDate" required>
-                        </label>
+                        <label for="email">Your Email Address:</label>
+                        <input type="email" name="email" id="email" required>
                     </div>
+            
+                    <div id="engagement">
+                        <p>Engagement Level: (How often do you want new memes sent to you?)</p>
+                        <label for="engage1"><input type="radio" id="engage1" name="engage" value="1"> <strong>Once a Month</strong></label>
+                        <label for="engage2"><input type="radio" id="engage2" name="engage" value="2"> <strong>Every two weeks</strong></label>
+                        <label for="engage3"><input type="radio" id="engage3" name="engage" value="3" required> <strong>Once a Week</strong></label>
+                        <label for="engage4"><input type="radio" id="engage4" name="engage" value="4"> <strong>Multiple Days a Week</strong></label>
+                        <label for="engage5"><input type="radio" id="engage5" name="engage" value="5"> <strong>Every Day</strong></label>
+                    </div>
+            
+                    <div>
+                        <label for="installDate">Date to Begin:</label>
+                        <input type="date" id="installDate" name="installDate" required>
+                    </div>
+            
                     <div>
                         <p>Which Meme Formats do you want sent?</p>
                         <p>(Check all that Apply)</p>
-                        <label for="durability"><input type="checkbox" name="features" value="durability" id="durability">Classic</label>
-                        <label for="ease"><input type="checkbox" name="features" value="ease" id="ease">Niche</label>
-                        <label for="performance"><input type="checkbox" name="features" value="performance" id="performance">Trending</label>
-                        <label for="design"><input type="checkbox" name="features" value="design" id="design">Random</label>
+                        <label for="classic"><input type="checkbox" id="classic" name="features" value="classic"> Classic</label>
+                        <label for="niche"><input type="checkbox" id="niche" name="features" value="niche"> Niche</label>
+                        <label for="trending"><input type="checkbox" id="trending" name="features" value="trending"> Trending</label>
+                        <label for="random"><input type="checkbox" id="random" name="features" value="random"> Random</label>
                     </div>
+            
                     <div id="review">
-                        <p>Message to be sent along with Introduction <span>(Optional)</span></p>
-                        <label><textarea name="message" id="message"></textarea></label>
+                        <label for="message">Message to be sent along with Introduction <span>(Optional)</span></label>
+                        <textarea name="message" id="message"></textarea>
                     </div>
+            
                     <div>
-                        <p>Your Name <span>(Optional)</span></p>
-                        <label><input type="text" name="name" id="name"></label>
+                        <label for="name">Your Name <span>(Optional)</span></label>
+                        <input type="text" name="name" id="name">
                     </div>
+            
                     <div>
-                        <label id="submit"><input type="submit" name="post-review" value="Open the Vault"></label>
+                        <input type="submit" name="post-review" value="Open the Vault">
                     </div>
                 </form>
             </section>
