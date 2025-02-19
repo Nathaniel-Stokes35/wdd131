@@ -1,0 +1,67 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+header {
+    width: 100vw;
+    padding: 15px;
+    padding-left: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+#hamburger {
+    display: none;
+    width: 40px;
+    height: 40px;
+}
+#nav-links {
+    width: 100%;
+    justify-self: right;
+    display: flex;
+    justify-content: space-evenly;
+}
+#nav-links a {
+    font-size: 1.2rem;
+}
+#close-nav {
+    display: block;
+}
+main {
+    max-width: 1800px;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+    text-align: center;
+    justify-self: center;
+}
+.album-box {
+    max-width: 1800px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+figure img{
+    width: 25vw;
+    max-width: 525px;
+}
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    border: var(--text) 1px solid;
+    border-radius: 50px;
+    box-shadow: 5px 5px 8px var(--text);
+    padding: 10px;
+    background-color: var(--accent);
+}
+#review {
+    padding: 10px;
+}
+#message{
+    width: 50vw;
+    height: 10rem;
+} 
+#name {
+    width: 10vw;
+    height: 2vh;
+    margin: 10px;
+}

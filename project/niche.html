@@ -1,0 +1,199 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Roboto+Condensed:wght@500&family=Montserrat:wght@700&display=swap" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="./styles/project.css" as="style">
+        <link rel="icon" href="./images/meme-icon.svg" type="image/x-icon">
+        <title>WDD 131 - Meme Vault : Random - Nathaniel Stokes</title>
+        <script src="./scripts/project.js" defer></script>
+        <meta name="author" content="Nathaniel Stokes">
+        <meta name="description" content="WDD 131 - Meme_Vault - Nathaniel Cole Stokes - Classics Page">
+        <link rel="stylesheet" href="./styles/project.css">
+        <link rel="stylesheet" href="./styles/project-large.css" media="screen and (min-width: 1200px)">
+    </head>
+    <body>
+        <header>
+            <section id="titles">
+                <h1>Meme_Vault</h1>
+                <p>Niche</p>    
+            </section>
+            <nav id="nav-links">
+                <a href="./index.html" target="_blank">Classic</a>
+                <a href="./niche.html" target="_blank">Niche</a>
+                <a href="./random.html" target="_blank" class="fun-elements">Random</a>
+                <a href="./trending.html" target="_blank">Trending</a>
+            </nav>
+            <select id="category-select">
+                <option value="" disabled selected>Select a category</option>
+                <option value="office">The Office</option>
+                <option value="video-games">Video Games</option>
+                <option value="politics">Politics</option>
+            </select>
+            <button id="hamburger" aria-label="Toggle Navigation" onclick="navigation_respond()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </header>
+        <main>
+            <h2>Niche</h2>
+            <section class="album-box">
+                <div id="first">
+                    <figure>
+                        <img
+                            src="./images/classic/blockbuster.webp"
+                            width="525"
+                            height="438" 
+                            alt="Hail-Hydra">
+                        <figcaption>Hail-Hydra / Elevator Fight Meme</figcaption>
+                    </figure>
+                    <figure>
+                        <img 
+                            src="./images/classic/all-around-win.webp"
+                            width="500"
+                            height="500" 
+                            alt="Success Kid">
+                        <figcaption>Success Kid Meme</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/classic/candy.webp"
+                            width="525"
+                            height="438"
+                            alt="Women Yelling at a Cat">
+                        <figcaption>Women Yelling at a Cat Meme</figcaption>
+                    </figure>
+                </div>
+                <div id="second">
+                    <figure>
+                        <img
+                            src="./images/classic/distracted_boyfriend_format.webp"
+                            width="525"
+                            height="438"
+                            alt="Distracted Boyfriend">
+                        <figcaption>Distracted Boyfriend Meme</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/classic/classic.webp"
+                            width="525"
+                            height="438"
+                            alt="Ancient Aliens">
+                        <figcaption>Ancient Aliens Meme</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/classic/divorced.webp"
+                            width="525"
+                            height="438"
+                            alt="Bad-Luck Brian">
+                        <figcaption>Bad Luck Brian</figcaption>
+                    </figure>
+                </div>
+                <div id="third">
+                    <figure>
+                        <img
+                            src="./images/classic/sawdust.webp"
+                            width="525"
+                            height="438"
+                            alt="Inception Bar Scene">
+                        <figcaption>Inception Conversation Meme</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/classic/submarine_pikachu.webp"
+                            width="525"
+                            height="438"
+                            alt="Surprised Pikachu">
+                        <figcaption>Surprised Pikachu Meme</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/classic/tell_me_now.webp"
+                            width="525"
+                            height="438"
+                            alt="Overly Attached Girlfriend">
+                        <figcaption>Overly Attached Girlfriend Meme</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <p>Sign up for our newsletter to get the latest memes sent to yours, or a friends, inbox!</p>
+                <p>Choose your engagment level, meme formats, and when you want to start receiving memes!</p>
+                <form method="get" action="newsletter.html">
+                    <div>
+                        <h2>Sign Up Form</h2>
+                        <label>
+                            <select id="products" name="products" required>
+                                    <option value="" disabled selected>I'm Signing Up...</option>
+                                    <option value="myself">For myself</option>
+                                    <option value="friend">For my friend</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>
+                        <p>Your Email Address:</p>
+                        <input type="text" name="email" id="email" required>
+                    </label>
+                    <div id="engagment">
+                        <p>Engagment Level: (How often do you want new memes sent to you?)</p>
+                        <label>
+                            <strong>Once a Month</strong>
+                            <input type="radio" name="engage" value="1">
+                        </label>
+                        <label>
+                            <strong>Every two weeks</strong>
+                            <input type="radio" name="engage" value="2">
+                        </label>
+                        <label>
+                            <strong>Once a Week</strong>
+                            <input type="radio" name="engage" value="3" required>
+                        </label>
+                        <label>
+                            <strong>Multiple Days a Week</strong>
+                            <input type="radio" name="engage" value="4">
+                        </label>
+                        <label>
+                            <strong>Every Day</strong>
+                            <input type="radio" name="engage" value="5">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Date to Begin: </p>
+                        <label>
+                            <input type="date" name="installDate" required>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Which Meme Formats do you want sent?</p>
+                        <p>(Check all that Apply)</p>
+                        <label for="durability"><input type="checkbox" name="features" value="durability" id="durability">Classic</label>
+                        <label for="ease"><input type="checkbox" name="features" value="ease" id="ease">Niche</label>
+                        <label for="performance"><input type="checkbox" name="features" value="performance" id="performance">Trending</label>
+                        <label for="design"><input type="checkbox" name="features" value="design" id="design">Random</label>
+                    </div>
+                    <div id="review">
+                        <p>Message to be sent along with Introduction <span>(Optional)</span></p>
+                        <label><textarea name="message" id="message"></textarea></label>
+                    </div>
+                    <div>
+                        <p>Your Name <span>(Optional)</span></p>
+                        <label><input type="text" name="name" id="name"></label>
+                    </div>
+                    <div>
+                        <label id="submit"><input type="submit" name="post-review" value="Open the Vault"></label>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;|<span id=currentYear></span>|Nathaniel Stokes|Missouri, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>

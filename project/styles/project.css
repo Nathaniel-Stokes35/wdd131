@@ -5,6 +5,23 @@
     --accent: #444;
     --background: #222;
 }
+header {
+    display: grid;
+    width:100vw;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--accent);
+}
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    color: var(--text);
+    padding: 10px;
+    text-decoration: none;
+    width: 100%;
+}
 body {
     background-color: var(--background);
     color: var(--text);
@@ -24,6 +41,16 @@ main section{
     padding: 5px;
     margin: 20px;
 }
+figure {
+    padding: 20px;
+}
+figure img {
+    max-width: 75vw;
+}
+#engagment label {
+    border: #EFE 1px solid;
+    padding: 10px;
+}
 button, .fun-elements {
     font-family: 'Comic Sans MS', cursive, sans-serif;
 }
@@ -32,6 +59,6 @@ button {
     color: var(--button-text);
 }
 footer {
-    font-size: 0.8em;
+    text-align: center;
     color: var(--text);
 }

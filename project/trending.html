@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:wght@400&family=Roboto+Condensed:wght@500&family=Montserrat:wght@700&display=swap" as="style" onload="this.rel='stylesheet'">
+        <link rel="preload" href="./styles/project.css" as="style">
+        <link rel="icon" href="./images/meme-icon.svg" type="image/x-icon">
+        <title>WDD 131 - Temples Picture Album - Nathaniel Stokes</title>
+        <script src="./scripts/project.js" defer></script>
+        <meta name="author" content="Nathaniel Stokes">
+        <meta name="description" content="WDD 131 - Meme_Vault - Nathaniel Cole Stokes - trendings Page">
+        <link rel="stylesheet" href="./styles/project.css">
+        <link rel="stylesheet" href="./styles/project-large.css" media="screen and (min-width: 1200px)">
+    </head>
+    <body>
+        <header>
+            <section id="titles">
+                <h1>Meme_Vault</h1>
+                <p>Trending</p>    
+            </section>
+            <nav id="nav-links">
+                <a href="./index.html" target="_blank">Classic</a>
+                <a href="./niche.html" target="_blank">Niche</a>
+                <a href="./random.html" target="_blank" class="fun-elements">Random</a>
+                <a href="./trending.html" target="_blank">Trending</a>
+            </nav>
+            <button id="hamburger" aria-label="Toggle Navigation" onclick="navigation_respond()">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </header>
+        <main>
+            <h2>Trending</h2>
+            <section class="album-box">
+                <div id="first">
+                    <figure>
+                        <img
+                            src="./images/trending/beaver-problems.webp"
+                            width="525"
+                            height="438" 
+                            alt="Beavers">
+                        <figcaption>Beaver Problems</figcaption>
+                    </figure>
+                    <figure>
+                        <img 
+                            src="./images/trending/boss_music.webp"
+                            width="500"
+                            height="500" 
+                            alt="Boss's">
+                        <figcaption>Somethings off</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/trending/christmas-problems.webp"
+                            width="525"
+                            height="438"
+                            alt="Men">
+                        <figcaption>Why is this on me?</figcaption>
+                    </figure>
+                </div>
+                <div id="second">
+                    <figure>
+                        <img
+                            src="./images/trending/ender.webp"
+                            width="525"
+                            height="438"
+                            alt="Bartender's have one job">
+                        <figcaption>It's in the name</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/trending/financial-freedom.webp"
+                            width="525"
+                            height="438"
+                            alt="I-don't-always-check-the-oil">
+                        <figcaption>Engines aren't "that" expensive</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/trending/four_hours_sleep.webp"
+                            width="525"
+                            height="438"
+                            alt="Sleep is for the weak">
+                        <figcaption>The day goes faster</figcaption>
+                    </figure>
+                </div>
+                <div id="third">
+                    <figure>
+                        <img
+                            src="./images/trending/mario_consipiracy.webp"
+                            width="525"
+                            height="438"
+                            alt="She wants bowser">
+                        <figcaption>Why else would it happen so often?</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/trending/marvel-anakin.webp"
+                            width="525"
+                            height="438"
+                            alt="Marvel didn't promise quality">
+                        <figcaption>If they weren't making money they wouldn't do it.</figcaption>
+                    </figure>
+                    <figure>
+                        <img
+                            src="./images/trending/out-of-tp.webp"
+                            width="525"
+                            height="438"
+                            alt="Where is the tp?">
+                        <figcaption>Proper Prior Planning Prevents Problematic Preformance</figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section id="newsletter">
+                <h2>Newsletter</h2>
+                <p>Sign up for our newsletter to get the latest memes sent to yours, or a friends, inbox!</p>
+                <p>Choose your engagment level, meme formats, and when you want to start receiving memes!</p>
+                <form method="get" action="newsletter.html">
+                    <div>
+                        <h2>Sign Up Form</h2>
+                        <label>
+                            <select id="products" name="products" required>
+                                    <option value="" disabled selected>I'm Signing Up...</option>
+                                    <option value="myself">For myself</option>
+                                    <option value="friend">For my friend</option>
+                            </select>
+                        </label>
+                    </div>
+                    <label>
+                        <p>Your Email Address:</p>
+                        <input type="text" name="email" id="email" required>
+                    </label>
+                    <div id="engagment">
+                        <p>Engagment Level: (How often do you want new memes sent to you?)</p>
+                        <label>
+                            <strong>Once a Month</strong>
+                            <input type="radio" name="engage" value="1">
+                        </label>
+                        <label>
+                            <strong>Every two weeks</strong>
+                            <input type="radio" name="engage" value="2">
+                        </label>
+                        <label>
+                            <strong>Once a Week</strong>
+                            <input type="radio" name="engage" value="3" required>
+                        </label>
+                        <label>
+                            <strong>Multiple Days a Week</strong>
+                            <input type="radio" name="engage" value="4">
+                        </label>
+                        <label>
+                            <strong>Every Day</strong>
+                            <input type="radio" name="engage" value="5">
+                        </label>
+                    </div>
+                    <div>
+                        <p>Date to Begin: </p>
+                        <label>
+                            <input type="date" name="installDate" required>
+                        </label>
+                    </div>
+                    <div>
+                        <p>Which Meme Formats do you want sent?</p>
+                        <p>(Check all that Apply)</p>
+                        <label for="durability"><input type="checkbox" name="features" value="durability" id="durability">Classic</label>
+                        <label for="ease"><input type="checkbox" name="features" value="ease" id="ease">Niche</label>
+                        <label for="performance"><input type="checkbox" name="features" value="performance" id="performance">Trending</label>
+                        <label for="design"><input type="checkbox" name="features" value="design" id="design">Random</label>
+                    </div>
+                    <div id="review">
+                        <p>Message to be sent along with Introduction <span>(Optional)</span></p>
+                        <label><textarea name="message" id="message"></textarea></label>
+                    </div>
+                    <div>
+                        <p>Your Name <span>(Optional)</span></p>
+                        <label><input type="text" name="name" id="name"></label>
+                    </div>
+                    <div>
+                        <label id="submit"><input type="submit" name="post-review" value="Open the Vault"></label>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;|<span id=currentYear></span>|Nathaniel Stokes|Missouri, USA</p>
+            <p id="lastModified"></p>
+        </footer>
+    </body>
+</html>
